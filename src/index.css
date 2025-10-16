@@ -1,0 +1,130 @@
+body{
+
+  background-color: rgb(235, 231, 221);
+} 
+
+/* h2, h4{
+  color: rgba(239, 140, 20, 0.884);
+}
+.contact-us{
+  font-family: Arial, sans-serif;
+  text-align:center;
+  margin-top: 100px;
+}
+.details{
+  font-size: 2rem;
+  
+  padding: 15px;
+  
+  margin-bottom: 10px; ;
+
+ 
+  display: flex;
+  align-items: center;
+
+} */
+/* 
+h1{
+  font-size: 1.7rem;
+}
+button{
+  font-weight: bold;
+  padding: 10px, 20px;
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+.add-button{
+  background-color: aquamarine;
+  
+
+}
+.add-button:hover{
+  background-color: aqua;
+  
+}
+.delete-button{
+  background-color: rgb(172, 24, 24);
+  
+}
+.delete-button:hover{
+  background-color: rgb(223, 6, 6);
+  
+}
+.move-button{
+  background-color: rgb(156, 181, 12);
+  
+}
+.move-button:hover{
+  background-color: rgb(214, 240, 68);
+
+}
+input[type="text"]{
+  font-size: 1.6rem;
+  padding: 10px;
+  border: 2px solid hsla(0, 0, 80, 0.5);
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.715);
+}
+ol{
+  padding: 0;
+}
+li{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  background-color: rgb(228, 241, 75);
+  margin-bottom: 10px; ;
+  border: 3px solid rgb(234, 200, 200);
+  border-radius: 5px ;
+  display: flex;
+  align-items: center;
+}
+.text{
+  flex: 1;
+} 
+.delete-button, .move-button{
+  padding: 8px 12px;
+  font-size: 1.4 rem;
+  margin-left: 10;
+} */  
+/* 
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: blue;
+
+}
+.style{
+  margin: 30px;
+  padding: 15px;
+  border: 2px solid red;
+  
+}
+.style-1{
+  margin: 30px;
+  padding: 15px;
+  border: 2px solid red;
+  
+}
+.style-2{
+  margin: 30px;
+  padding: 15px;
+  border: 2px solid red;
+  
+}
+.style-3{
+  margin: 30px;
+  padding: 15px;
+  border: 2px solid red;
+  
+}
+.style-4{
+  margin: 30px;
+  padding: 15px;
+  border: 2px solid red;
+  
+} */
