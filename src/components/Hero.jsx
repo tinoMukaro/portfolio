@@ -2,7 +2,7 @@ import { FaInstagram, FaWhatsapp, FaGithub, FaEnvelope } from "react-icons/fa";
 
 function Hero() {
   return (
-    <section className="flex justify-between items-center py-28 px-5 gap-10 flex-col md:flex-row">
+    <section id="hero" className="flex justify-between items-center py-28 px-5 gap-10 flex-col md:flex-row">
       {/* Text Section */}
       <div className="flex-1 text-center md:text-left">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">
@@ -54,7 +54,7 @@ function Hero() {
       {/* Image Section */}
       <div className="flex-1 flex justify-center">
         <img
-          src="/this.jpg"
+          src="/this.png"
           alt="picture of me"
           className="w-72 h-72 rounded-2xl object-cover transform rotate-3 transition-transform duration-700 hover:scale-110"
         />
