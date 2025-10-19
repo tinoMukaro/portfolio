@@ -5,10 +5,10 @@ function Hero(){
             <div className="hero-text">
                 <h1>Full-Stake Web developer and aspiring Cloud engineer</h1>
                 <p>
-                    Hi, My name is Tino Mukaro i am a fullstake web developer with expertise in node.js.<br />
-                    i focus on building scalable web apps using various technologies, <br />
-                    i enjoy using technology to solve day to day problems and learning new skills. <br />
-                    i am always looking for challenges and opportunities to grow as a developer <br />
+                    Hey, I’m Tino Mukaro <br />
+                    A passionate Full-Stack Developer who enjoys turning ideas into scalable web apps. <br /> 
+                    Always learning, always building.<br />
+ 
                 </p>
                 <div className="socials">
                     <a href="https://www.instagram.com/tinomukaro/" target="_blank" rel="noreferrer"><FaInstagram /></a>
