@@ -2,6 +2,7 @@
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import Projects from "./components/Projects"
+import Approach from "./components/Approach"
 
 function App() {
   
@@ -11,6 +12,7 @@ function App() {
     <Navbar />
     <Hero />
     <Projects />
+    <Approach />
     
      
     </>
