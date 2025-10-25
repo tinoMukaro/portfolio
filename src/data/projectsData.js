@@ -22,5 +22,15 @@ export const projects = [
     details:
       "TOMS enables authorities to record, manage, and resolve traffic offences efficiently. It supports authentication, role-based access, and dynamic fine adjustments.",
     techStack: ["React", "Express", "PostgreSQL"],
-  }
+  },{
+  id: 3,
+  title: "Subscription Management System API",
+  image: "/subr.png",
+  shortDesc: "An API that reminds users to cancel their subscriptions before renewal.",
+  repoLink: "https://github.com/tinoMukaro/subscriptionAPI",
+  details:
+    "A production-ready API built with Node.js, Express, and MongoDB. It authenticates users with JWT, manages subscriptions, and automates email reminders before renewals. Includes Arcjet-based rate limiting, error handling, and Upstash-powered workflows.",
+  techStack: ["Node.js", "Express", "MongoDB", "Arcjet", "Upstash"],
+}
+
 ];
