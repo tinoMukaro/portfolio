@@ -17,7 +17,7 @@ function Hero() {
 
         <div className="flex justify-center md:justify-start gap-5 mt-5 text-2xl">
           <a
-            href="https://www.instagram.com/tinomukaro/"
+            href="https://www.instagram.com/tino.mukaro/"
             target="_blank"
             rel="noreferrer"
             className="text-gray-700 hover:text-blue-500 transition-transform transform hover:scale-110"
