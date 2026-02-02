@@ -27,7 +27,7 @@ export const projects = [
   id: 3,
   title: "FoodWise",
   image: "/foodwise.png",
-  shortDesc: "Smart food deals platform to reduce food waste.",
+  shortDesc: "Food deals platform to reduce food waste.",
   repoLink: "https://github.com/tinoMukaro/foodWise",
   details:
     `FoodWise is a web platform that helps reduce food waste by connecting users with 
