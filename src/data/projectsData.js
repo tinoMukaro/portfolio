@@ -22,15 +22,24 @@ export const projects = [
     details:
       "TOMS enables authorities to record, manage, and resolve traffic offences efficiently. It supports authentication, role-based access, and dynamic fine adjustments.",
     techStack: ["React", "Express", "PostgreSQL"],
-  },{
+  },
+  {
   id: 3,
-  title: "Subscription Management System API",
-  image: "/subr.png",
-  shortDesc: "An API that reminds users to cancel their subscriptions before renewal.",
-  repoLink: "https://github.com/tinoMukaro/subscriptionAPI",
+  title: "FoodWise",
+  image: "/foodwise.png",
+  shortDesc: "Smart food deals platform to reduce food waste.",
+  repoLink: "https://github.com/tinoMukaro/foodWise",
   details:
-    "A production-ready API built with Node.js, Express, and MongoDB. It authenticates users with JWT, manages subscriptions, and automates email reminders before renewals. Includes Arcjet-based rate limiting, error handling, and Upstash-powered workflows.",
-  techStack: ["Node.js", "Express", "MongoDB", "Arcjet", "Upstash"],
-}
+    `FoodWise is a web platform that helps reduce food waste by connecting users with 
+    discounted surplus food from local businesses. Businesses can create time-limited deals 
+    that automatically expire, while users can browse active deals and reserve them in advance.
+
+    The system supports order creation and status tracking, allowing businesses to view incoming 
+    reservations and users to collect deals before expiry. The platform is built with a modern 
+    full-stack architecture, featuring a React frontend, an Express backend with Drizzle ORM, 
+    PostgreSQL for data storage, and JWT-based authentication for secure user access.`,
+  techStack: ["React", "Express", "PostgreSQL", "Drizzle ORM"],
+},
+
 
 ];
