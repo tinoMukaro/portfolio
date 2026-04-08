@@ -11,7 +11,8 @@ function About() {
 
         <p className="text-lg leading-relaxed text-gray-600 mb-4">
           I enjoy building scalable web applications that solve real-world problems. I have experience working with 
-          modern technologies like React, Node.js, Express, and integrating machine learning into applications.
+          modern technologies like React, Node.js, Express, and Java's Spring Boot. 
+          I am also interested in integrating machine learning into applications, using APIs and Python.
         </p>
 
         <p className="text-lg leading-relaxed text-gray-600 mb-4">
