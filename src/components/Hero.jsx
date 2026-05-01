@@ -11,7 +11,7 @@ function Hero() {
         <p className="text-gray-700 leading-relaxed">
           Hey, I’m <span className="font-semibold">Tino Mukaro</span> <br />
           A passionate Full-Stack Developer who enjoys turning ideas into
-          scalable web apps. <br />
+          scalable apps. <br />
           Always learning, always building.
         </p>
 
