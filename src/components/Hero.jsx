@@ -6,7 +6,7 @@ function Hero() {
       {/* Text Section */}
       <div className="flex-1 text-center md:text-left">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">
-          Web Developer and Aspiring Cloud Engineer
+          Software Developer and Aspiring Cloud Engineer
         </h1>
         <p className="text-gray-700 leading-relaxed">
           Hey, I’m <span className="font-semibold">Tino Mukaro</span> <br />
