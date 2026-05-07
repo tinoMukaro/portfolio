@@ -40,6 +40,19 @@ export const projects = [
     PostgreSQL for data storage, and JWT-based authentication for secure user access.`,
   techStack: ["React", "Express", "PostgreSQL", "Drizzle ORM"],
 },
+{
+id: 4,
+title: "Travel Torch",
+image: "/traveltorch.png",
+shortDesc: "Personal travel concierge website for a Harare-based business.",
+liveLink: "https://traveltorch.vercel.app/",
+details:
+  `Travel Torch is a lead-generation website for a travel concierge business based in Harare, Zimbabwe.
+  It features a full one-page layout covering services, about, and contact sections with a WhatsApp click-to-chat integration.
+  Built with plain HTML, CSS, and JavaScript — no frameworks — with a mobile-first responsive design, 
+  smooth scroll animations via IntersectionObserver, hamburger navigation, and client-side form validation.`,
+techStack: ["HTML", "CSS", "JavaScript"],
+}
 
 
 ];
