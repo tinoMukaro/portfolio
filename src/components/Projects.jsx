@@ -19,68 +19,77 @@ const Projects = () => {
       <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-8 justify-center">
         {projects.map((project) => (
           <article
-            key={project.id}
-            className="bg-white border border-gray-300 rounded-lg overflow-hidden cursor-pointer text-left transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl"
-            onClick={() => setSelectedProject(project)}
-          >
-            {/* Image */}
-            <div>
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-44 object-cover border-b border-gray-200"
-              />
-            </div>
+  key={project.id}
+  onClick={() => setSelectedProject(project)}
+  className="group relative cursor-pointer overflow-hidden rounded-3xl border border-gray-200 bg-white text-left shadow-md transition-all duration-500 ease-out hover:-translate-y-3 hover:shadow-2xl hover:shadow-blue-500/10"
+>
+  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-purple-500/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
-            {/* Content */}
-            <div className="p-4">
-              <h3 className="text-lg font-semibold mb-1">{project.title}</h3>
-              <p className="text-sm text-gray-700">{project.shortDesc}</p>
+  <div className="overflow-hidden">
+    <img
+      src={project.image}
+      alt={project.title}
+      className="h-52 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+    />
+  </div>
 
-              <div className="mt-4">
-                <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
-                  Goal
-                </p>
-                <p className="mt-1 text-sm text-gray-800">{project.goal}</p>
-              </div>
+  <div className="relative p-6">
+    <h3 className="mb-2 text-xl font-semibold text-gray-900">
+      {project.title}
+    </h3>
 
-              <ul className="mt-4 flex flex-wrap gap-2">
-                {project.techStack.slice(0, 4).map((tech) => (
-                  <li
-                    key={tech}
-                    className="rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-700"
-                  >
-                    {tech}
-                  </li>
-                ))}
-              </ul>
+    <p className="text-sm leading-6 text-gray-600">
+      {project.shortDesc}
+    </p>
 
-              <div className="mt-4 flex gap-3">
-                {project.liveLink && (
-                  <a
-                    href={project.liveLink}
-                    target="_blank"
-                    rel="noreferrer"
-                    onClick={(e) => e.stopPropagation()}
-                    className="text-sm text-black font-medium hover:opacity-60 transition"
-                  >
-                    Live Demo
-                  </a>
-                )}
-                {project.repoLink && (
-                  <a
-                    href={project.repoLink}
-                    target="_blank"
-                    rel="noreferrer"
-                    onClick={(e) => e.stopPropagation()}
-                    className="text-sm text-black font-medium hover:opacity-60 transition"
-                  >
-                    Source Code
-                  </a>
-                )}
-              </div>
-            </div>
-          </article>
+    <div className="mt-5">
+      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-600">
+        Goal
+      </p>
+
+      <p className="mt-2 text-sm leading-6 text-gray-700">
+        {project.goal}
+      </p>
+    </div>
+
+    <ul className="mt-5 flex flex-wrap gap-2">
+      {project.techStack.slice(0, 4).map((tech) => (
+        <li
+          key={tech}
+          className="rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-medium text-gray-700 transition duration-300 group-hover:border-blue-200 group-hover:bg-blue-50 group-hover:text-blue-600"
+        >
+          {tech}
+        </li>
+      ))}
+    </ul>
+
+    <div className="mt-6 flex gap-5">
+      {project.liveLink && (
+        <a
+          href={project.liveLink}
+          target="_blank"
+          rel="noreferrer"
+          onClick={(e) => e.stopPropagation()}
+          className="text-sm font-semibold text-blue-600 transition-all duration-300 hover:translate-x-1 hover:text-blue-700"
+        >
+          Live Demo →
+        </a>
+      )}
+
+      {project.repoLink && (
+        <a
+          href={project.repoLink}
+          target="_blank"
+          rel="noreferrer"
+          onClick={(e) => e.stopPropagation()}
+          className="text-sm font-semibold text-gray-700 transition-all duration-300 hover:translate-x-1 hover:text-black"
+        >
+          Source Code →
+        </a>
+      )}
+    </div>
+  </div>
+</article>
         ))}
       </div>
 
