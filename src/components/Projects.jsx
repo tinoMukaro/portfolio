@@ -9,14 +9,18 @@ const Projects = () => {
       id="projects"
       className="py-10 px-6 bg-gray-100 text-black text-center"
     >
-      <h2 className="text-3xl font-bold mb-8">Projects</h2>
+      <h2 className="text-3xl font-bold mb-2">Projects</h2>
+      <p className="mx-auto mb-8 max-w-2xl text-sm text-gray-700">
+        Selected builds presented as compact case studies: problem, stack,
+        outcome, and the technical decisions behind them.
+      </p>
 
       {/* Projects Grid */}
       <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-8 justify-center">
         {projects.map((project) => (
           <article
             key={project.id}
-            className="bg-white border border-gray-300 rounded-xl overflow-hidden cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl"
+            className="bg-white border border-gray-300 rounded-lg overflow-hidden cursor-pointer text-left transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl"
             onClick={() => setSelectedProject(project)}
           >
             {/* Image */}
@@ -33,16 +37,34 @@ const Projects = () => {
               <h3 className="text-lg font-semibold mb-1">{project.title}</h3>
               <p className="text-sm text-gray-700">{project.shortDesc}</p>
 
-              <div className="mt-3 flex justify-center gap-3">
+              <div className="mt-4">
+                <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
+                  Goal
+                </p>
+                <p className="mt-1 text-sm text-gray-800">{project.goal}</p>
+              </div>
+
+              <ul className="mt-4 flex flex-wrap gap-2">
+                {project.techStack.slice(0, 4).map((tech) => (
+                  <li
+                    key={tech}
+                    className="rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-700"
+                  >
+                    {tech}
+                  </li>
+                ))}
+              </ul>
+
+              <div className="mt-4 flex gap-3">
                 {project.liveLink && (
                   <a
                     href={project.liveLink}
                     target="_blank"
                     rel="noreferrer"
                     onClick={(e) => e.stopPropagation()}
-                    className="text-black font-medium hover:opacity-60 transition"
+                    className="text-sm text-black font-medium hover:opacity-60 transition"
                   >
-                    Live
+                    Live Demo
                   </a>
                 )}
                 {project.repoLink && (
@@ -51,9 +73,9 @@ const Projects = () => {
                     target="_blank"
                     rel="noreferrer"
                     onClick={(e) => e.stopPropagation()}
-                    className="text-black font-medium hover:opacity-60 transition"
+                    className="text-sm text-black font-medium hover:opacity-60 transition"
                   >
-                    GitHub
+                    Source Code
                   </a>
                 )}
               </div>
@@ -69,7 +91,7 @@ const Projects = () => {
           onClick={() => setSelectedProject(null)}
         >
           <div
-            className="bg-white text-black p-8 rounded-xl w-[90%] max-w-xl relative shadow-2xl animate-slideUp"
+            className="max-h-[90vh] w-[92%] max-w-3xl overflow-y-auto rounded-lg bg-white p-6 text-left text-black shadow-2xl animate-slideUp md:p-8"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close Button */}
@@ -91,10 +113,37 @@ const Projects = () => {
             <h2 className="text-2xl font-semibold mb-2">
               {selectedProject.title}
             </h2>
-            <p className="text-gray-800 mb-4">{selectedProject.details}</p>
+            <p className="text-gray-800 mb-6 whitespace-pre-line">
+              {selectedProject.details}
+            </p>
 
-            <h4 className="font-semibold mb-2">Tech Stack:</h4>
-            <ul className="flex flex-wrap justify-center gap-2 mb-4">
+            <div className="grid gap-4 md:grid-cols-2">
+              <section className="rounded-md border border-gray-200 p-4">
+                <h3 className="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-500">
+                  Goal
+                </h3>
+                <p className="text-sm leading-6 text-gray-800">
+                  {selectedProject.goal}
+                </p>
+              </section>
+
+              <section className="rounded-md border border-gray-200 p-4">
+                <h3 className="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-500">
+                  Challenge / Solution
+                </h3>
+                <p className="text-sm leading-6 text-gray-800">
+                  <span className="font-semibold text-black">Challenge:</span>{" "}
+                  {selectedProject.challenge}
+                </p>
+                <p className="mt-2 text-sm leading-6 text-gray-800">
+                  <span className="font-semibold text-black">Solution:</span>{" "}
+                  {selectedProject.solution}
+                </p>
+              </section>
+            </div>
+
+            <h4 className="mt-6 mb-2 font-semibold">Tech Stack</h4>
+            <ul className="flex flex-wrap gap-2 mb-6">
               {selectedProject.techStack.map((tech, index) => (
                 <li
                   key={index}
@@ -106,7 +155,7 @@ const Projects = () => {
             </ul>
 
             {/* Modal Links */}
-            <div className="flex justify-center gap-4 flex-wrap">
+            <div className="flex gap-4 flex-wrap">
               {selectedProject.liveLink && (
                 <a
                   href={selectedProject.liveLink}
@@ -114,7 +163,7 @@ const Projects = () => {
                   rel="noreferrer"
                   className="inline-block border border-black text-black px-4 py-2 rounded-md font-semibold hover:bg-black hover:text-white transition"
                 >
-                  View Live
+                  Live Demo
                 </a>
               )}
               {selectedProject.repoLink && (
@@ -124,7 +173,7 @@ const Projects = () => {
                   rel="noreferrer"
                   className="inline-block border border-black text-black px-4 py-2 rounded-md font-semibold hover:bg-black hover:text-white transition"
                 >
-                  View Code
+                  Source Code
                 </a>
               )}
             </div>
