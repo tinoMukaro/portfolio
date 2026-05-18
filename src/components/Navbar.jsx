@@ -36,6 +36,14 @@ function Navbar() {
         </li>
         <li>
           <button
+            onClick={() => handleScrollTo("skills")}
+            className="text-black font-medium transition-colors duration-700 hover:text-blue-600 hover:font-semibold"
+          >
+            Skills
+          </button>
+        </li>
+        <li>
+          <button
             onClick={() => handleScrollTo("projects")}
             className="text-black font-medium transition-colors duration-700 hover:text-blue-600 hover:font-semibold"
           >

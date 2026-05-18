@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react"; 
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Approach from "./components/Approach";
 import About from "./pages/About";
@@ -18,6 +19,7 @@ function App() {
           element={
             <>
               <Hero />
+              <Skills />
               <Projects />
               <Approach />
             </>
