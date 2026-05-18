@@ -14,17 +14,7 @@ export const projects = [
     techStack: ["React", "Express", "Hugging Face API"],
   },
   {
-    id: 2,
-    title: "Traffic Offence Management System (TOMS)",
-    image: "/toms.jpg",
-    shortDesc: "A web system to manage and track traffic offences.",
-    repoLink: "https://github.com/tinoMukaro/TOMS",
-    details:
-      "TOMS enables authorities to record, manage, and resolve traffic offences efficiently. It supports authentication, role-based access, and dynamic fine adjustments.",
-    techStack: ["React", "Express", "PostgreSQL"],
-  },
-  {
-  id: 3,
+  id: 2,
   title: "FoodWise",
   image: "/foodwise.png",
   shortDesc: "Food deals platform to reduce food waste.",
@@ -41,7 +31,7 @@ export const projects = [
   techStack: ["React", "Express", "PostgreSQL", "Drizzle ORM"],
 },
 {
-id: 4,
+id: 3,
 title: "Travel Torch",
 image: "/traveltorch.png",
 shortDesc: "Personal travel concierge website for a Harare-based business.",
