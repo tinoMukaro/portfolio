@@ -4,10 +4,12 @@ function Contact() {
   return (
     <section id="contacts" className="py-20 bg-white text-gray-800">
       <div className="max-w-4xl mx-auto px-6 text-center">
+        <br />
         <h2 className="text-4xl font-bold mb-10">Contact Me</h2>
         <p className="text-gray-700 leading-relaxed my-10">
             Im always available to talk
         </p>
+        <br />
 
 
         <div className="flex flex-col md:flex-row justify-center gap-10 text-gray-700">
@@ -18,10 +20,14 @@ function Contact() {
             </a>
           </div>
 
+          <br />
+
           <div className="flex items-center gap-3">
             <FaPhone className="text-blue-600 text-xl" />
             <span>+263 786 020 205 || +263 713 603 359</span>
           </div>
+
+          <br />
           
 
           <div className="flex items-center gap-3">
@@ -30,6 +36,8 @@ function Contact() {
               GitHub
             </a>
           </div>
+
+          <br />
 
           <div className="flex items-center gap-3">
             <FaLinkedin className="text-blue-600 text-xl" />
